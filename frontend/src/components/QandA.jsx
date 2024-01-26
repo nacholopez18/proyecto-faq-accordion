@@ -6,14 +6,15 @@ function QandA(props) {
       <div>
         <div>
           <h4>{props.question}</h4>
-          <button>
-            <img src={props.minus} />
-            <img src={props.plus} />
+          <button
+            onClick={props.handleButton}
+            //   disabled={props.noShow}
+          >
+            <img src={props.btnImg} />
           </button>
         </div>
         <p>{props.answer}</p>
       </div>
-      ;
     </>
   );
 }
