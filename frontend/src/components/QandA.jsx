@@ -1,19 +1,22 @@
-import { React } from "react";
+import { React, useState } from "react";
 
 function QandA(props) {
+  const [response, setResponse] = useState(false);
+
+  function handleButton() {
+    setResponse(!response);
+    console.log(response);
+  }
   return (
     <>
       <div>
-        <div>
+        <div className="question">
           <h4>{props.question}</h4>
-          <button
-            onClick={props.handleButton}
-            //   disabled={props.noShow}
-          >
-            <img src={props.btnImg} />
+          <button onClick={handleButton}>
+            <img src={response ? "./icon-minus.svg" : "./icon-plus.svg"} />
           </button>
         </div>
-        <p>{props.answer}</p>
+        <p>{response ? props.answer : null}</p>
       </div>
     </>
   );

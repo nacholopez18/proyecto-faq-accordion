@@ -1,0 +1,18 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.question button {
+  border: none;
+  background-color: transparent;
+}
+.qAndAContainer {
+  border-radius: 10px;
+  background-color: white;
+  margin: 50px;
+}
