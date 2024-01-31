@@ -16,7 +16,7 @@ function QandA(props) {
             <img src={response ? "./icon-minus.svg" : "./icon-plus.svg"} />
           </button>
         </div>
-        <p>{response ? props.answer : null}</p>
+        <p className="answer">{response ? props.answer : null}</p>
       </div>
     </>
   );

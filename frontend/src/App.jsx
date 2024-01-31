@@ -5,8 +5,8 @@ import QandA from "./components/QandA";
 function App() {
   return (
     <>
-      <main className="mainContainer">
-        <div className="">
+      <main className="allPageContainer">
+        <div className="mainContainer">
           <div className="background">
             <img src="./icon-star.svg" alt="" />
             <h1>FAQs</h1>
